@@ -4,8 +4,6 @@
 #3993DD Blue
 #FFD23F Yellow
 #C05746 Red
-
-
  */
 
 p {
@@ -14,6 +12,7 @@ p {
 }
 
 body {
+    font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,7 +40,7 @@ header > p:first-child {
     background-color: white;
 }
 
-.nav ul {
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0 16px;
@@ -62,6 +61,18 @@ header > p:first-child {
     border-radius: 12px;
 }
 
+.content ul {
+    display: flex;
+    flex-flow: row wrap;
+    list-style-type:disc;
+    gap: 0 32px;
+    justify-content: center;
+}
+
+/* .content li {
+    padding: 0 16px;
+} */
+
 .jobExperience,
 .education,
 .skills {
@@ -77,19 +88,11 @@ header > p:first-child {
 
 .title {
     font-size: 24px;
+    font-weight: 800;
     background-color: #3993DD;
     border-radius: 6px;
     padding: 8px;
     color: white;
-}
-
-.experienceHeader {
-    display: flex;
-    gap: 16px;
-    justify-content: space-between;
-    align-items: flex-end;
-    padding-bottom: 8px;
-    border-bottom: 3px solid #2B2D42;
 }
 
 .rightContent {
@@ -98,11 +101,34 @@ header > p:first-child {
     gap: 16px;
 }
 
+.desc {
+    padding-bottom: 16px;
+}
+
+.experienceHeader,
+.educationHeader {
+    display: flex;
+    gap: 16px;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 8px;
+    border-bottom: 3px solid #2B2D42;
+}
+
 .experienceHeader > p:first-child {
     font-weight: 600;
-    font-size: 24px
+    font-size: 24px;
+}
+
+.educationHeader > p:first-child {
+    font-weight: 600;
+    font-size: 24px;
 }
 
 .experienceHeader > p:last-child {
+    font-style: italic;
+}
+
+.educationHeader > p:last-child {
     font-style: italic;
 }
